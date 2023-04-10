@@ -4,11 +4,11 @@ A feature-rich, responsive, and user-friendly platform that can help people find
 
 Check out the website here : https://itchyfeet.vercel.app/home
 
-A fully functional platform for finding tours all over the world. Using MongoDB as your database, ReactJS and CSS for your frontend, and ExpressJS and NodeJS for your backend.
-Additionally, implementing Stripe for payment processing is a great way to provide a secure and streamlined payment experience for your users. 
-We have deployed our frontend on Vercel and our backend is on Render is because we have considered hosting options to optimize your website's performance.
+A fully functional platform for finding tours all over the world. Using MongoDB as our database, ReactJS and CSS for our frontend, and ExpressJS and NodeJS for our backend.
+Additionally, implementing Stripe for payment processing is a way to provide secure and streamlined payment experience for the users. 
+We have deployed our frontend on Vercel and our backend is on Render. We have considered the hosting options to optimize our website's performance.
 
-The tours section and my booking section add significant value to your website by allowing users to explore different tour options and keep track of their bookings.
+The tours section and my booking section add significant value to the website by allowing users to explore different tour options and keep track of their bookings.
 ## Authors
 
 Developed by 
