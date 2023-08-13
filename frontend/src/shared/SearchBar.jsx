@@ -16,6 +16,9 @@ const SearchBar = () => {
     if (location === "" || distance === "" || maxGroupSize === "") {
       return alert("All fields are required!");
     }
+    if (parseInt(maxGroupSize) <= 0) {
+      return alert("Max People value must be greater than 0!");
+    }
     const res = await fetch(
       `${BASE_URL}/tours/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`
     );
@@ -31,7 +34,7 @@ const SearchBar = () => {
     <Col lg="12">
       <div className="search__bar">
         <Form className="d-flex align-items-center gap-4">
-          <FormGroup className="d-flex gap-3 form__group form__group-fast">
+          <FormGroup className="d-flex gap-3 form__group form__group-last">
             <span>
               <i className="ri-map-pin-line"></i>
             </span>
@@ -53,7 +56,7 @@ const SearchBar = () => {
               <input
                 type="number"
                 placeholder="Distance k/m"
-                ref={distanceRef}
+                ref={distanceRef} min="0"
               />
             </div>
           </FormGroup>
@@ -63,7 +66,7 @@ const SearchBar = () => {
             </span>
             <div>
               <h6>Max People</h6>
-              <input type="number" placeholder="0" ref={maxGroupSizeRef} />
+              <input type="number" placeholder="0" ref={maxGroupSizeRef} min="0" />
             </div>
           </FormGroup>
           <span className="search__icon" type="submit" onClick={searchHandler}>

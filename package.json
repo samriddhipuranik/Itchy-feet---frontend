@@ -1,0 +1,11 @@
+{
+  "name": "itchy-feet---frontend",
+  "version": "1.0.0",
+  "description": "A feature-rich, responsive, and user-friendly platform that can help people find and book tours from all over the world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
